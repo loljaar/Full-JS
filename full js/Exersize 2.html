@@ -1,0 +1,201 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading">Welcome to Code With Harry</h1>
+      <div id="myfirst" class="child red good" id="first">
+        child 1
+
+        <ul class="this">
+          <li class="childul">this</li>
+          <li class="childul">is</li>
+          <li class="childul">a</li>
+          <li class="childul">list</li>
+          <li class="childul">of my dreams</li>
+        </ul>
+      </div>
+      <div class="child">child 2</div>
+      <div class="child red">child 3</div>
+      <div class="child">child 4</div>
+      <form action="none.html" method="post">
+        <a href="//codewithharry.com">Go to Code With Harry</a>
+        <br />
+        <br />
+        Search this website: <input type="text" name="Hello" id="" />
+        <input type="button" value="submit" />
+      </form>
+    </div>
+    <br />
+    <div class="no">this is a dummy div1</div>
+    <div class="no">this is a dummy div2</div>
+    <div class="no">this is a dummy div3</div>
+  </body>
+  <script>
+    let divElm = document.createElement("div");
+    // Local storeage
+    let val = localStorage.getItem("text");
+    let taxt ;
+    if (val == null) {
+        // taxt to created Element
+         text = document.createTextNode(" This is MY Element click to Edit");
+        
+    }
+    else{
+        text = document.createTextNode(val);
+    }
+
+    divElm.appendChild(text);
+    //Give Element id, style and class
+    divElm.setAttribute("id", "elm");
+    divElm.setAttribute("class", "elm");
+    divElm.setAttribute(
+      "style",
+      "border: 2px solid red; width: 155px ; margin: 20px; padding: 10px; background: grey; color: Black; overflow: none;"
+    );
+    // Grab the main container
+    let container = document.querySelector(".container");
+    let myfirst = document.querySelector("#myfirst");
+    //Insert the Element Befor #myFirst
+  container.insertBefore(divElm, myfirst);
+
+    //console.log(divElm, container, myfirst);
+
+
+    // add event letioner to the divElm 
+    divElm.addEventListener("click", fun)
+    function fun(e) {
+        let noTextArea= document.getElementsByClassName("textarea").length;
+        if (noTextArea == 0) {
+            
+            //let html = ` <textarea class="form-control textarea" id="textarea" rows="3" style="max-width: 150px; min-width: 150px; max-height: 50px; min-height: 50px;" ></textarea> `;
+            let html = elm.innerHTML;
+             divElm.innerHTML=` <textarea class="form-control textarea" id="textarea" rows="3" style="max-width: 150px; min-width: 150px; max-height: 50px; min-height: 50px;" >${html}</textarea> `;;
+        }
+        // for bler on textarea
+        let textarea = document.getElementById("textarea");
+        textarea.addEventListener("blur", function () {
+            elm.innerHTML= textarea.value;
+           sessionStorage.setItem("text", textarea.value)
+        });
+         
+           
+        
+    }
+    
+  </script>
+</html> -->
+
+<!-- // tryed aging  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+              *{
+                margin: 0%;
+                padding: 0%;
+              }
+               .div_c{
+                min-width: 60ch;
+                max-width: 60ch;
+                min-height: 20ch;
+                max-height: 20ch;
+                background-color: #333;
+                color: white;
+                text-align: center;
+                position: relative;
+               }
+               .TextArea_c{
+                min-width: 60ch;
+                max-width: 60ch;
+                min-height: 20ch;
+                max-height: 20ch;
+                background-color: rgb(87, 87, 87);
+                color: white;
+                text-align: center;
+                position: absolute;
+                top: 0%;
+                left: 3%;
+               display: none;
+              }
+              
+    </style>
+</head>
+<body>
+   
+    <script>
+        
+
+    
+      // Created  Div 
+        let div = document.createElement("div");
+        div.classList.add("div_c");
+        div.setAttribute("id", "div_id");
+        
+        document.body.appendChild(div);
+    
+
+
+        div.addEventListener("click", display);
+        
+        
+       function display() {
+        let Home =document.getElementById("TextArea_id");
+        Home.style.display="initial";
+        return Home;
+       };
+       
+
+
+
+        
+      console.log(div);
+//=================================================================//        
+      // creating local storage
+      let stor = localStorage.getItem("goods")
+           let goods;
+           if (stor == null) {
+        // taxt to created Element
+         goods = document.createTextNode(" This is MY Element click to Edit");
+        
+    }
+    else{
+        text = document.createTextNode(stor);
+    }
+    
+    //=================================================================//
+    
+    // creating texttArea
+    
+    let TextArea = document.createElement("textarea")
+    TextArea.classList.add("TextArea_c");
+    TextArea.setAttribute("id", "TextArea_id");
+    
+    
+    
+    document.body.appendChild(TextArea);
+    
+    console.log(TextArea);
+    
+    div.innerText=(extArea.appendChild(goods));
+ 
+//=================================================================//
+
+
+//=================================================================//
+
+    
+      </script>
+</body>
+</html> -->
+
