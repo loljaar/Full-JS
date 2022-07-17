@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 2px solid red;
+            background-color: lightgreen;
+            font-weight: bold;
+          
+        }
+        body{
+            background-color: #2b2b2b;
+            transition: .5s;
+        }
+        .darkmode{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+
+      /* .date_time{
+        display: flex;
+        position:relative;
+        top: 30px;
+       border: 2px solid red;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       height: 30vh;
+       background-color: grey;
+       
+      }
+      #DATE{
+        display: flex;
+        padding: 0%;
+        border: 2px solid black;
+        background-color: gainsboro;
+        font-size: 40px;
+        width: 75%;
+        height: 40%;
+        align-items: center;
+        justify-content: center;
+      } */
+      /* ========================================================================================== */
+      /* changing back groung clor with nice style */
+      
+      /* 1st try */
+      /* #BW{
+        display: flex;
+        position: relative;
+        border: 2px solid red;
+        margin-top: 5%;
+        
+        justify-content: center;
+        align-items: center;
+        
+        background-color: gray;
+        width: 100%;
+        height: 26vh;
+
+        /* transition: 0.5s; */
+
+      /*}*/
+      /*#toggle{
+        display: block;
+        position: relative;
+        background-color: #222;
+        cursor: pointer;
+        width: 230px;
+        height: 100px;
+        border-radius: 160px;
+        /* transition: 0.5s; 
+        box-shadow: inset 0px 8px 60px rgb(0, 0, 0,0.1) ,
+                    inset 0px 8px 60px rgb(0, 0, 0,0.1) ,
+                   inset 0px -4px 4px rgb(0, 0, 0,0.1);
+      }
+      #toggle .indicater{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(to bottom , #fff,#222);
+        border-radius: 50%;
+        transform: scale(.9);
+        box-shadow: 0px 8px 40px rgb(0, 0, 0,0.5),
+                   inset 0px 4px 4px rgb(222, 222, 222, 0.2),
+                   inset 0px 4px 4px rgb(222, 222, 222, 0.2),
+                   inset 0px -4px 4px rgb(222, 222, 222, 0.2);
+        transform: 0.5;
+
+      } */
+
+      /* ========================================================================================== */
+
+      /* 2nd try */
+      /*#toggle{
+        display: block;
+        position: relative;
+        top: 50px;
+      left:300px;
+        background-color: #222;
+        cursor: pointer;
+        width: 230px;
+        height: 100px;
+        border-radius: 160px;
+        box-shadow: 0px 8px 40px rgb(0, 0, 0,0.5),
+                   inset 0px 4px 4px rgb(222, 222, 222, 0.2),
+                   inset 0px 4px 4px rgb(222, 222, 222, 0.2),
+                   inset 0px -4px 4px rgb(222, 222, 222, 0.2);
+        transform: 0.5;
+      }
+
+        .indicator {
+        
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(to bottom , #363434,#222);
+        border-radius: 50%;
+        transform: scale(.9);
+        box-shadow: 0px 8px 40px rgb(0, 0, 0,0.5),
+                   inset 0px 4px 4px rgb(222, 222, 222, 0.2),
+                   inset 0px 4px 4px rgb(222, 222, 222, 0.2),
+                   inset 0px -4px 4px rgb(222, 222, 222, 0.2);
+        transform: 0.5;
+        transition-duration: .5s;
+       
+      }
+
+      #toggle.active .indicator{
+        left: 129px;
+       
+        background: linear-gradient(to bottom , #ffffff,#9b9b9b);
+      }
+      
+      body.active{
+        background-color: #f8f8f8;
+      }*/
+
+      /* ========================================================================================== */
+       
+    /* 3rd try  is succsesfull and we can now have img in-side*/
+
+      /* #toggle img{
+        width: 100px;
+        height: 100px;
+        border-radius: 115px;
+        filter: invert(0);
+        transition-duration: .7s;
+      }
+  
+      #toggle{
+        
+        display: flex;
+        position: relative;
+        top: 45px;
+        left: 400px;
+        width: 250px;
+        height: 100px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        background-color:  #222;
+        border-radius: 115px;
+        transition-duration: 1s;
+        transform: .5;
+     }
+     #toggle .indicator{
+        position: absolute;
+        top: 0% ;
+        left: 0%;
+        width: 100px;
+        height: 95px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        background-color: rgb(41, 41, 40);
+        border-radius: 50px;
+        transition-duration: .7s;
+      }
+     
+      #toggle.active .indicator{
+        left: 150px;
+        border-top: 3px solid rgb(255, 255, 255);
+        border-bottom: 3px solid rgb(255, 255, 255);
+        background-color: rgb(155, 155, 148);
+       filter: opacity(.2);
+      }
+        #toggle.active img{
+          
+            width: 250px;
+        }
+      #toggle.active {
+                    background-color: #b7aeae;
+                   }
+
+       body.active{
+        background-color: #fffafa;
+
+       }  */
+
+       /* ========================================================================================== */
+       /* try 4 */
+        /* #toggle{
+
+        }
+
+        #toggle .indicator{
+
+        }
+
+       #toggle.active .indicator{
+
+       }
+       
+       #toggle.active{
+
+       }
+      
+       body.active{
+
+       } */
+
+       /* ========================================================================================== */
+    </style>
+    
+</head>
+<body>
+    <h1>hellw</h1>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nihil at, earum quisquam quibusdam atque facere deleniti sequi assumenda quaerat neque tenetur officia adipisci iusto repudiandae ducimus id architecto, voluptas minus dolores cupiditate dolorum, debitis qui! Quibusdam hic maxime dolorum pariatur, laboriosam voluptate molestias placeat facilis deleniti illo. Magnam corporis maxime aperiam accusantium temporibus aspernatur dignissimos nihil dolore nostrum hic optio dicta maiores reiciendis saepe repudiandae corrupti fugiat, dolorum error odit impedit repellat quia! Rem omnis, maiores dicta ipsam laudantium quisquam aliquam ipsum quos eius nemo explicabo assumenda similique sit ullam voluptatum laborum. Quod voluptatem, aspernatur a maiores nobis atque!</p>
+    <button id="btn" onclick="toggleHide()">show/hide</button>
+    <button id="btn2" onclick="changebackgroundcolor()">dark</button>
+    <script src="js practic 2.js"></script>
+
+    <!-- <div>
+    tiem is now :- 
+    <span id="time">
+               </span>
+    </div>
+
+    <div class="date_time">
+        <span id="DATE">
+            time:-
+        </span>
+    </div> -->
+
+    <!--  1st try <section id="BW">
+    <div id="toggle">
+        <i class="indicater">
+
+        </i>
+    </div>    -->
+
+        <!-- 2nd try  it works --> 
+        <!-- <div id="toggle"> 
+            <i class="indicator"></i>
+        </div> -->
+
+      <!--  3nd try --> 
+         <!-- <div id="toggle"> 
+            <img src="https://th.bing.com/th/id/R.7e3d4cd486401f44a65752880db7a493?rik=6tyVfNBpokCS7A&riu=http%3a%2f%2fimg06.deviantart.net%2ff84d%2fi%2f2015%2f130%2f6%2f2%2fbeach_sunrise_stock_01_by_alliton-d8svhlv.jpg&ehk=3pf1kfm27TGQ4o9FXfdNs1FAaQPLvpC%2byBKWD%2bd%2b9Ws%3d&risl=&pid=ImgRaw&r=0" alt="">
+           
+            <i class="indicator"></i>
+        </div> -->
+
+       <!-- 4nd try --> 
+       
+       <!-- <div id="toggle">
+        <img src="" alt="">
+        <i class="indicator"></i>
+       </div>  -->
+
+<!-- ===================================================================================================== -->
+    <script>
+   //=======================================================================================================//
+     // 2nd try //
+            // const body = document.querySelector("body")
+            // const toggle = document.getElementById("toggle")
+            // toggle.onclick = function () {
+            //     toggle.classList.toggle('active')
+            //     body.classList.toggle('active')
+               
+            // }
+    //=======================================================================================================//
+
+    //=======================================================================================================//
+      // 3rd try //
+        //  const body = document.querySelector("body")
+        //  const toggle = document.getElementById("toggle") 
+        //  toggle.onclick=function () {
+        //     toggle.classList.toggle("active")
+        //     body.classList.toggle("active")
+        //  } 
+              
+    //=======================================================================================================//
+     
+    // 4rh try 
+    //   const body = document.querySelector("body") 
+    //   const something1 = document. getElementById("toggle")
+    //    toggle.onclick = function () {
+    //      something1.classList.toggle("active")
+    //      body.classList.toggle("active")
+    //   }
+   
+    //=======================================================================================================//
+    
+
+    </script>
+</body>
+</html>

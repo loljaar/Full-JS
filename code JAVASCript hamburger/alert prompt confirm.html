@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interection using alert prompt conform</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width: 100%;
+            height: 50vh;
+           margin-top: 30px;
+            flex-direction: column;
+
+        }
+        h2{
+            margin-top:20% ;
+        }
+        .name,
+        .phone,
+        .email,
+        .submit{
+       
+            border: 2px solid black;
+            font-size: 15px ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px 10px;
+            margin-top: 20px;
+            width: 40vw;
+            height: 10vh;
+        }
+        .name input,
+        .phone input,
+        .email input,
+        .submit input{
+            width: 30vw;
+            height: 9vh;
+        }
+        .submit{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <h2> this is a web-page </h2>
+     
+        <div class="name">   NAME:- <input type="text" placeholder="name" required>  </div>
+        <div class="phone"> PHONE:- <input type="number" name="phone" id=""placeholder="+91 9999 999 99"  required> </div>
+        <div class="email">E_Mail:-<input type="email" name="email" id="" placeholder="sometyh@gmail.com"  required></div>
+        <div class="submit"><input type="submit" value="submit"></div>
+    </div>
+    <script>
+         //alert in browser java script ~ dose no retrune anyting//
+        //  alert("this is a massage")
+        //  let a = alert("this is asecond massge ")
+        //  console.log(a)
+
+          //prompt in browser java script
+        // let name = prompt("what is your name", "guest");
+        // console.log(name);
+
+        //  let him = prompt("what is your age")
+        //  if(him>17){
+        //       alert("welcome")
+        //  }
+        //  else{
+        //      alert("not welcome")
+        //  }
+         //confrome in browser java script
+        //let deletpost = confirm("do you realy wanto delet this post", "delet it");
+        // console.log(deletpost);
+        //if(deletpost){
+            // code to delet the post
+          //  console.log("has been deleted")
+            
+       // }
+       // else{
+       //     //code to cancel delet of the post
+        //    console.log("dont deleted")
+           
+       // }
+       // console.log(deletpost);
+    </script>
+</body>
+</html>

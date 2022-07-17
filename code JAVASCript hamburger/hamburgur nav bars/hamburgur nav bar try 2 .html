@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+          
+        }
+        #back{
+            display: inline-flex;
+           
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 70px;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: pink;
+        }
+        
+        #bar{
+            position: fixed;
+             top: 0%;
+             left: 10px;
+             /* z-index: 1; */
+             display: block;
+             width: 60px;
+             height: 60px;
+             border: 2px solid red;
+             background-color: rgb(180, 180, 32);
+           
+        }
+        #nav{
+             position: fixed;
+             top: 0%;
+             left: 10px;
+            
+             display: inline-flex;
+             width: 60px;
+             height: 60px;
+             background-color: gray;
+             border: 2px solid #2b2b2b;
+             justify-content: center;
+             align-items: center;
+             padding: 10px;
+             transform: scale(0);
+             transition: ease-out 250ms;
+             }
+
+             /* #bar::after{
+                content: "";
+                display: flex;
+                position: relative;
+                  width: 100px;
+                  height: 200px;
+                 left: 60px;
+                  background-color: blueviolet;
+                  transform: scale(0);
+                  transform-origin: top left;
+                  transition: transform ease-out 150ms,
+                               bottom ease-out 150ms; 
+             }
+             #bar:hover::after{
+                transform: scale(1);
+             } */
+
+             #nav.active{
+                  width: 200px;
+                  height: 400px;
+                  transform: scale(1);
+             } 
+
+             section{
+                margin-top: 70px;
+             }
+         #logo{
+            width: 100px;
+            height: 40px;
+            border: 2px solid red;
+            
+         }
+    </style>
+</head>
+<body>
+   <div id="back"></div>
+
+    <div id="nav">
+             <div id="logo"><a href=""><img src="https://clipart.info/images/ccovers/1516920567instagram-png-logo-transparent.png" width="100px" height="40ox" alt=""></a></div>
+    </div>
+
+    <div id="bar" nice="helo"></div>
+    
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam qui natus laboriosam consequatur temporibus nobis dignissimos numquam saepe ea molestias reiciendis suscipit fugit voluptates velit itaque repellat autem iure explicabo, nulla, corporis eaque rerum! Commodi placeat veritatis, reiciendis sequi deserunt possimus odio maiores dolorum fugit eos soluta aut rerum, dolorem praesentium earum accusantium perspiciatis facere nemo id? Accusantium magni sit vel, eveniet consectetur error magnam nisi assumenda ratione quidem nobis provident labore. Illum possimus voluptatum inventore qui? Consequuntur accusamus voluptate iure, magni quod inventore placeat ducimus nisi at, provident corrupti recusandae quo dolor incidunt suscipit fuga reprehenderit perferendis quis? Ea laudantium enim rem architecto. Facilis qui nemo nobis animi modi mollitia accusantium eius ab vero assumenda iure amet odio, quam veritatis vel, molestias molestiae praesentium, libero in tenetur totam nisi aliquam! Soluta, quibusdam. Praesentium incidunt, reprehenderit excepturi dolor nam molestiae nostrum commodi laudantium delectus atque id debitis fuga quo, hic sint, eveniet veritatis nesciunt voluptatem nihil. Dignissimos odio ipsa explicabo dolores. Commodi doloribus quod, voluptatibus dolore laborum labore illum officiis alias tempora illo explicabo libero ea debitis ad? Dignissimos saepe itaque possimus aliquam incidunt deleniti nihil tempora, corrupti laboriosam facilis totam commodi nemo explicabo ullam enim eligendi fuga, fugit accusantium architecto. Architecto, itaque, quidem repellendus sint eos consectetur similique ea provident quo vero, hic reiciendis praesentium optio? Hic, ab consectetur. Odio ipsam modi, delectus quisquam minima, saepe nesciunt debitis asperiores voluptate facilis perferendis quae, adipisci quaerat earum id harum dolores iste blanditiis amet corporis cumque! Optio accusantium reiciendis magnam, odit necessitatibus nobis nemo explicabo possimus provident architecto, molestiae quis cupiditate nihil pariatur doloribus earum numquam ad quae ab debitis nisi. Numquam ducimus illo tempora laboriosam libero atque cupiditate culpa in eaque dicta nulla magni iure perferendis doloremque delectus sequi rerum quisquam, alias porro expedita quis dolorum facilis? Delectus, reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam qui natus laboriosam consequatur temporibus nobis dignissimos numquam saepe ea molestias reiciendis suscipit fugit voluptates velit itaque repellat autem iure explicabo, nulla, corporis eaque rerum! Commodi placeat veritatis, reiciendis sequi deserunt possimus odio maiores dolorum fugit eos soluta aut rerum, dolorem praesentium earum accusantium perspiciatis facere nemo id? Accusantium magni sit vel, eveniet consectetur error magnam nisi assumenda ratione quidem nobis provident labore. Illum possimus voluptatum inventore qui? Consequuntur accusamus voluptate iure, magni quod inventore placeat ducimus nisi at, provident corrupti recusandae quo dolor incidunt suscipit fuga reprehenderit perferendis quis? Ea laudantium enim rem architecto. Facilis qui nemo nobis animi modi mollitia accusantium eius ab vero assumenda iure amet odio, quam veritatis vel, molestias molestiae praesentium, libero in tenetur totam nisi aliquam! Soluta, quibusdam. Praesentium incidunt, reprehenderit excepturi dolor nam molestiae nostrum commodi laudantium delectus atque id debitis fuga quo, hic sint, eveniet veritatis nesciunt voluptatem nihil. Dignissimos odio ipsa explicabo dolores. Commodi doloribus quod, voluptatibus dolore laborum labore illum officiis alias tempora illo explicabo libero ea debitis ad? Dignissimos saepe itaque possimus aliquam incidunt deleniti nihil tempora, corrupti laboriosam facilis totam commodi nemo explicabo ullam enim eligendi fuga, fugit accusantium architecto. Architecto, itaque, quidem repellendus sint eos consectetur similique ea provident quo vero, hic reiciendis praesentium optio? Hic, ab consectetur. Odio ipsam modi, delectus quisquam minima, saepe nesciunt debitis asperiores voluptate facilis perferendis quae, adipisci quaerat earum id harum dolores iste blanditiis amet corporis cumque! Optio accusantium reiciendis magnam, odit necessitatibus nobis nemo explicabo possimus provident architecto, molestiae quis cupiditate nihil pariatur doloribus earum numquam ad quae ab debitis nisi. Numquam ducimus illo tempora laboriosam libero atque cupiditate culpa in eaque dicta nulla magni iure perferendis doloremque delectus sequi rerum quisquam, alias porro expedita quis dolorum facilis? Delectus, reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam qui natus laboriosam consequatur temporibus nobis dignissimos numquam saepe ea molestias reiciendis suscipit fugit voluptates velit itaque repellat autem iure explicabo, nulla, corporis eaque rerum! Commodi placeat veritatis, reiciendis sequi deserunt possimus odio maiores dolorum fugit eos soluta aut rerum, dolorem praesentium earum accusantium perspiciatis facere nemo id? Accusantium magni sit vel, eveniet consectetur error magnam nisi assumenda ratione quidem nobis provident labore. Illum possimus voluptatum inventore qui? Consequuntur accusamus voluptate iure, magni quod inventore placeat ducimus nisi at, provident corrupti recusandae quo dolor incidunt suscipit fuga reprehenderit perferendis quis? Ea laudantium enim rem architecto. Facilis qui nemo nobis animi modi mollitia accusantium eius ab vero assumenda iure amet odio, quam veritatis vel, molestias molestiae praesentium, libero in tenetur totam nisi aliquam! Soluta, quibusdam. Praesentium incidunt, reprehenderit excepturi dolor nam molestiae nostrum commodi laudantium delectus atque id debitis fuga quo, hic sint, eveniet veritatis nesciunt voluptatem nihil. Dignissimos odio ipsa explicabo dolores. Commodi doloribus quod, voluptatibus dolore laborum labore illum officiis alias tempora illo explicabo libero ea debitis ad? Dignissimos saepe itaque possimus aliquam incidunt deleniti nihil tempora, corrupti laboriosam facilis totam commodi nemo explicabo ullam enim eligendi fuga, fugit accusantium architecto. Architecto, itaque, quidem repellendus sint eos consectetur similique ea provident quo vero, hic reiciendis praesentium optio? Hic, ab consectetur. Odio ipsam modi, delectus quisquam minima, saepe nesciunt debitis asperiores voluptate facilis perferendis quae, adipisci quaerat earum id harum dolores iste blanditiis amet corporis cumque! Optio accusantium reiciendis magnam, odit necessitatibus nobis nemo explicabo possimus provident architecto, molestiae quis cupiditate nihil pariatur doloribus earum numquam ad quae ab debitis nisi. Numquam ducimus illo tempora laboriosam libero atque cupiditate culpa in eaque dicta nulla magni iure perferendis doloremque delectus sequi rerum quisquam, alias porro expedita quis dolorum facilis? Delectus, reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam qui natus laboriosam consequatur temporibus nobis dignissimos numquam saepe ea molestias reiciendis suscipit fugit voluptates velit itaque repellat autem iure explicabo, nulla, corporis eaque rerum! Commodi placeat veritatis, reiciendis sequi deserunt possimus odio maiores dolorum fugit eos soluta aut rerum, dolorem praesentium earum accusantium perspiciatis facere nemo id? Accusantium magni sit vel, eveniet consectetur error magnam nisi assumenda ratione quidem nobis provident labore. Illum possimus voluptatum inventore qui? Consequuntur accusamus voluptate iure, magni quod inventore placeat ducimus nisi at, provident corrupti recusandae quo dolor incidunt suscipit fuga reprehenderit perferendis quis? Ea laudantium enim rem architecto. Facilis qui nemo nobis animi modi mollitia accusantium eius ab vero assumenda iure amet odio, quam veritatis vel, molestias molestiae praesentium, libero in tenetur totam nisi aliquam! Soluta, quibusdam. Praesentium incidunt, reprehenderit excepturi dolor nam molestiae nostrum commodi laudantium delectus atque id debitis fuga quo, hic sint, eveniet veritatis nesciunt voluptatem nihil. Dignissimos odio ipsa explicabo dolores. Commodi doloribus quod, voluptatibus dolore laborum labore illum officiis alias tempora illo explicabo libero ea debitis ad? Dignissimos saepe itaque possimus aliquam incidunt deleniti nihil tempora, corrupti laboriosam facilis totam commodi nemo explicabo ullam enim eligendi fuga, fugit accusantium architecto. Architecto, itaque, quidem repellendus sint eos consectetur similique ea provident quo vero, hic reiciendis praesentium optio? Hic, ab consectetur. Odio ipsam modi, delectus quisquam minima, saepe nesciunt debitis asperiores voluptate facilis perferendis quae, adipisci quaerat earum id harum dolores iste blanditiis amet corporis cumque! Optio accusantium reiciendis magnam, odit necessitatibus nobis nemo explicabo possimus provident architecto, molestiae quis cupiditate nihil pariatur doloribus earum numquam ad quae ab debitis nisi. Numquam ducimus illo tempora laboriosam libero atque cupiditate culpa in eaque dicta nulla magni iure perferendis doloremque delectus sequi rerum quisquam, alias porro expedita quis dolorum facilis? Delectus, reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam qui natus laboriosam consequatur temporibus nobis dignissimos numquam saepe ea molestias reiciendis suscipit fugit voluptates velit itaque repellat autem iure explicabo, nulla, corporis eaque rerum! Commodi placeat veritatis, reiciendis sequi deserunt possimus odio maiores dolorum fugit eos soluta aut rerum, dolorem praesentium earum accusantium perspiciatis facere nemo id? Accusantium magni sit vel, eveniet consectetur error magnam nisi assumenda ratione quidem nobis provident labore. Illum possimus voluptatum inventore qui? Consequuntur accusamus voluptate iure, magni quod inventore placeat ducimus nisi at, provident corrupti recusandae quo dolor incidunt suscipit fuga reprehenderit perferendis quis? Ea laudantium enim rem architecto. Facilis qui nemo nobis animi modi mollitia accusantium eius ab vero assumenda iure amet odio, quam veritatis vel, molestias molestiae praesentium, libero in tenetur totam nisi aliquam! Soluta, quibusdam. Praesentium incidunt, reprehenderit excepturi dolor nam molestiae nostrum commodi laudantium delectus atque id debitis fuga quo, hic sint, eveniet veritatis nesciunt voluptatem nihil. Dignissimos odio ipsa explicabo dolores. Commodi doloribus quod, voluptatibus dolore laborum labore illum officiis alias tempora illo explicabo libero ea debitis ad? Dignissimos saepe itaque possimus aliquam incidunt deleniti nihil tempora, corrupti laboriosam facilis totam commodi nemo explicabo ullam enim eligendi fuga, fugit accusantium architecto. Architecto, itaque, quidem repellendus sint eos consectetur similique ea provident quo vero, hic reiciendis praesentium optio? Hic, ab consectetur. Odio ipsam modi, delectus quisquam minima, saepe nesciunt debitis asperiores voluptate facilis perferendis quae, adipisci quaerat earum id harum dolores iste blanditiis amet corporis cumque! Optio accusantium reiciendis magnam, odit necessitatibus nobis nemo explicabo possimus provident architecto, molestiae quis cupiditate nihil pariatur doloribus earum numquam ad quae ab debitis nisi. Numquam ducimus illo tempora laboriosam libero atque cupiditate culpa in eaque dicta nulla magni iure perferendis doloremque delectus sequi rerum quisquam, alias porro expedita quis dolorum facilis? Delectus, reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam qui natus laboriosam consequatur temporibus nobis dignissimos numquam saepe ea molestias reiciendis suscipit fugit voluptates velit itaque repellat autem iure explicabo, nulla, corporis eaque rerum! Commodi placeat veritatis, reiciendis sequi deserunt possimus odio maiores dolorum fugit eos soluta aut rerum, dolorem praesentium earum accusantium perspiciatis facere nemo id? Accusantium magni sit vel, eveniet consectetur error magnam nisi assumenda ratione quidem nobis provident labore. Illum possimus voluptatum inventore qui? Consequuntur accusamus voluptate iure, magni quod inventore placeat ducimus nisi at, provident corrupti recusandae quo dolor incidunt suscipit fuga reprehenderit perferendis quis? Ea laudantium enim rem architecto. Facilis qui nemo nobis animi modi mollitia accusantium eius ab vero assumenda iure amet odio, quam veritatis vel, molestias molestiae praesentium, libero in tenetur totam nisi aliquam! Soluta, quibusdam. Praesentium incidunt, reprehenderit excepturi dolor nam molestiae nostrum commodi laudantium delectus atque id debitis fuga quo, hic sint, eveniet veritatis nesciunt voluptatem nihil. Dignissimos odio ipsa explicabo dolores. Commodi doloribus quod, voluptatibus dolore laborum labore illum officiis alias tempora illo explicabo libero ea debitis ad? Dignissimos saepe itaque possimus aliquam incidunt deleniti nihil tempora, corrupti laboriosam facilis totam commodi nemo explicabo ullam enim eligendi fuga, fugit accusantium architecto. Architecto, itaque, quidem repellendus sint eos consectetur similique ea provident quo vero, hic reiciendis praesentium optio? Hic, ab consectetur. Odio ipsam modi, delectus quisquam minima, saepe nesciunt debitis asperiores voluptate facilis perferendis quae, adipisci quaerat earum id harum dolores iste blanditiis amet corporis cumque! Optio accusantium reiciendis magnam, odit necessitatibus nobis nemo explicabo possimus provident architecto, molestiae quis cupiditate nihil pariatur doloribus earum numquam ad quae ab debitis nisi. Numquam ducimus illo tempora laboriosam libero atque cupiditate culpa in eaque dicta nulla magni iure perferendis doloremque delectus sequi rerum quisquam, alias porro expedita quis dolorum facilis? Delectus, reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam qui natus laboriosam consequatur temporibus nobis dignissimos numquam saepe ea molestias reiciendis suscipit fugit voluptates velit itaque repellat autem iure explicabo, nulla, corporis eaque rerum! Commodi placeat veritatis, reiciendis sequi deserunt possimus odio maiores dolorum fugit eos soluta aut rerum, dolorem praesentium earum accusantium perspiciatis facere nemo id? Accusantium magni sit vel, eveniet consectetur error magnam nisi assumenda ratione quidem nobis provident labore. Illum possimus voluptatum inventore qui? Consequuntur accusamus voluptate iure, magni quod inventore placeat ducimus nisi at, provident corrupti recusandae quo dolor incidunt suscipit fuga reprehenderit perferendis quis? Ea laudantium enim rem architecto. Facilis qui nemo nobis animi modi mollitia accusantium eius ab vero assumenda iure amet odio, quam veritatis vel, molestias molestiae praesentium, libero in tenetur totam nisi aliquam! Soluta, quibusdam. Praesentium incidunt, reprehenderit excepturi dolor nam molestiae nostrum commodi laudantium delectus atque id debitis fuga quo, hic sint, eveniet veritatis nesciunt voluptatem nihil. Dignissimos odio ipsa explicabo dolores. Commodi doloribus quod, voluptatibus dolore laborum labore illum officiis alias tempora illo explicabo libero ea debitis ad? Dignissimos saepe itaque possimus aliquam incidunt deleniti nihil tempora, corrupti laboriosam facilis totam commodi nemo explicabo ullam enim eligendi fuga, fugit accusantium architecto. Architecto, itaque, quidem repellendus sint eos consectetur similique ea provident quo vero, hic reiciendis praesentium optio? Hic, ab consectetur. Odio ipsam modi, delectus quisquam minima, saepe nesciunt debitis asperiores voluptate facilis perferendis quae, adipisci quaerat earum id harum dolores iste blanditiis amet corporis cumque! Optio accusantium reiciendis magnam, odit necessitatibus nobis nemo explicabo possimus provident architecto, molestiae quis cupiditate nihil pariatur doloribus earum numquam ad quae ab debitis nisi. Numquam ducimus illo tempora laboriosam libero atque cupiditate culpa in eaque dicta nulla magni iure perferendis doloremque delectus sequi rerum quisquam, alias porro expedita quis dolorum facilis? Delectus, reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam qui natus laboriosam consequatur temporibus nobis dignissimos numquam saepe ea molestias reiciendis suscipit fugit voluptates velit itaque repellat autem iure explicabo, nulla, corporis eaque rerum! Commodi placeat veritatis, reiciendis sequi deserunt possimus odio maiores dolorum fugit eos soluta aut rerum, dolorem praesentium earum accusantium perspiciatis facere nemo id? Accusantium magni sit vel, eveniet consectetur error magnam nisi assumenda ratione quidem nobis provident labore. Illum possimus voluptatum inventore qui? Consequuntur accusamus voluptate iure, magni quod inventore placeat ducimus nisi at, provident corrupti recusandae quo dolor incidunt suscipit fuga reprehenderit perferendis quis? Ea laudantium enim rem architecto. Facilis qui nemo nobis animi modi mollitia accusantium eius ab vero assumenda iure amet odio, quam veritatis vel, molestias molestiae praesentium, libero in tenetur totam nisi aliquam! Soluta, quibusdam. Praesentium incidunt, reprehenderit excepturi dolor nam molestiae nostrum commodi laudantium delectus atque id debitis fuga quo, hic sint, eveniet veritatis nesciunt voluptatem nihil. Dignissimos odio ipsa explicabo dolores. Commodi doloribus quod, voluptatibus dolore laborum labore illum officiis alias tempora illo explicabo libero ea debitis ad? Dignissimos saepe itaque possimus aliquam incidunt deleniti nihil tempora, corrupti laboriosam facilis totam commodi nemo explicabo ullam enim eligendi fuga, fugit accusantium architecto. Architecto, itaque, quidem repellendus sint eos consectetur similique ea provident quo vero, hic reiciendis praesentium optio? Hic, ab consectetur. Odio ipsam modi, delectus quisquam minima, saepe nesciunt debitis asperiores voluptate facilis perferendis quae, adipisci quaerat earum id harum dolores iste blanditiis amet corporis cumque! Optio accusantium reiciendis magnam, odit necessitatibus nobis nemo explicabo possimus provident architecto, molestiae quis cupiditate nihil pariatur doloribus earum numquam ad quae ab debitis nisi. Numquam ducimus illo tempora laboriosam libero atque cupiditate culpa in eaque dicta nulla magni iure perferendis doloremque delectus sequi rerum quisquam, alias porro expedita quis dolorum facilis? Delectus, reprehenderit.</p>
+    </section>
+
+    <script>
+        const nav = document.getElementById("nav")
+        const bar = document.getElementById("bar")
+        bar.onclick = function () {
+            bar .classList.toggle("active")
+            nav .classList.toggle("active")
+        }
+    </script>
+</body>
+</html>

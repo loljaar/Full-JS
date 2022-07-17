@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is Arrow Functione 
+    </div>
+
+    <script>
+        console.log("Arrow functions");
+
+
+//normal//
+     function greet() {
+         console.log("hellow in greet");
+     }
+     greet();
+
+     // Arrow Functione//
+    // greet = ()=> {
+    //      console.log("hellow in greet with Arrow Functione");
+    //  }
+    //  greet();
+
+    // greet();
+    //  setTimeout(() => {
+    //      console.log("weare in side set-timeout")
+    //  }, 3000);
+    // short of uper
+    greet();
+     setTimeout(() =>   console.log("weare in side set-timeout")
+     , 3000);
+
+         let obj1 ={
+             greeting: "good moring",
+            names:["jatin", "harry", "rhohan"],
+            speak(){
+                this.names.forEach((students)=>{
+                console.log(this.greeting + "hello0w" + students);
+                
+                }); 
+            }
+         }                       
+          obj1.speak();
+      //  let sum =(a,b) =>{
+    //            let c=a+b;  
+    //            return c;
+    //  };
+    // let her = sum(23,24);
+    // console.log(her)
+
+    let sum = (a,b) => {
+        return a+b;
+    }
+    // short cut for upper sum //
+    let sum2=(a,b)=> a+b;
+    let half= a=> a/2;
+
+    </script>
+</body>
+</html>

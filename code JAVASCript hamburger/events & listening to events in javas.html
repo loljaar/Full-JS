@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js eventst</title>
+    <style>
+        #btn{
+            padding: 10px 14px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        }
+        #btn2{
+            padding: 10px 14px;
+            
+            border: 2px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <!-- browser events":
+    click
+    contextmenu
+    mouse over / mouse out
+    mouse down / mouse up
+    mouse move
+
+    submit 
+    focus
+
+    dom content loeaded
+
+    transtitiond -->
+
+    <div class="container">
+        <h1 ondrag="">this is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quos nisi, quidem voluptatibus unde ab esse qui velit fuga ea illo enim modi quo molestiae quaerat mollitia ipsa laudantium cumque suscipit fugiat? Voluptatibus facilis temporibus aperiam inventore enim illum ut in! Suscipit fugiat cum atque deserunt voluptatibus ipsa eos exercitationem. Veritatis autem pariatur quaerat maxime! Ut odio assumenda sed suscipit fugiat veritatis, sapiente rerum illo, neque sunt, quia perspiciatis? Aliquam, sunt, asperiores veniam quae perspiciatis beatae eaque excepturi iste quisquam qui voluptas ipsum, dolorum odit soluta reiciendis molestias consequuntur aspernatur commodi cumque! Blanditiis dolorem dolore sint quia corporis ipsam voluptatem est velit tenetur, ad nulla iure iusto id, earum doloremque tempore! Maiores aspernatur, unde corporis, ducimus tempora provident aliquid id nostrum ratione voluptas excepturi nobis nihil dicta eum qui quibusdam officia aut facere mollitia voluptatem magnam obcaecati eaque? Sint qui corrupti a, tempora numquam ducimus odit, veniam voluptate in distinctio sequi expedita voluptatibus. Accusantium doloribus praesentium maiores ullam eum ad animi maxime, sint a expedita vel cumque quod facere magni, dignissimos, aliquam tempore quidem? Voluptatem possimus consequatur itaque, non sequi sit ducimus beatae aspernatur reiciendis voluptatum voluptatibus odio labore sed quo et blanditiis adipisci eveniet laudantium voluptas nam maxime, laborum laboriosam! Expedita distinctio eum ullam rerum molestias pariatur recusandae natus possimus quos vero, quas alias eligendi quia quam nisi rem, doloribus ratione architecto nobis quod! Porro rerum nesciunt vero, iste impedit aut explicabo?</p>
+    </div>
+    <button id="btn"class="btn" onclick="toggeleHide()">show/hide</button>
+    
+    
+
+<script>
+    console.log("JS Events");
+     
+    // let  para = document.getElementById('para');
+    // para.addEventListener("mouseover", function run() {
+
+    //     alert('mouse inside')
+    // });
+    
+    // para.addEventListener("mouseout", function run() {
+
+    //     alert('mouse out side')
+    // });
+
+     function toggeleHide() {
+    //   let  btn = document.getElementById('btn');
+    //   let  para = document.getElementById('para');
+      if (para.style.display != 'none'){
+
+         para.style.display = 'none'
+      }
+      else{
+      para.style.display = 'block';
+       
+      }
+     }
+    </script>
+</body>
+</html>

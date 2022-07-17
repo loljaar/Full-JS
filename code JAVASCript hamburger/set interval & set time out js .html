@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        time now is <span id="time">
+
+        </span>
+    </div>
+
+
+    <script>
+       console.log("this is the start of set interval & set time out in java script");
+ 
+
+    //setTimeout --> allouse us to run the function once after the interval of time
+    // clearTimeout --> allouse us to run the function repetedly after the interval of time
+
+    // greet("jatin")
+     function greet(name, bytext) {
+        console.log("hellow good morning" + name + " " + bytext);
+
+   }
+    // setTimeout(greet, 3000, "jatin", "teck kara");
+  // TimeOut = setTimeout(greet, 3000, "jatin", "teck kara");
+  // console.log(TimeOut);
+    
+   //clearTimeout(TimeOut);
+    // setTimeout(greet(), 3000); --> wrong as it is calling the functione inside the settimeout //
+
+     //intervalId = setInterval(greet, 1000, "jatin", "good moring");
+     //clearInterval(intervalId)
+     function diesplaytime() {
+         time = new Date(); 
+         console.log(time);
+         document.getElementById('time').innerHTML = 'time'
+     }
+     setInterval(diesplaytime, 1000);
+    </script>
+</body>
+</html>

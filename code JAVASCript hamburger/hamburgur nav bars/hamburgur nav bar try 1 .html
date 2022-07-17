@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js practic 3 media .css">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+         }
+         #nav{
+           
+            width: 100%;
+            height: 15vh;
+            background-color: #2b2b22;
+            border: 2px solid grey;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(4, auto);
+            align-items: center;
+            position: sticky;
+            top: 0%;
+            justify-content: space-around;
+            
+
+         }
+
+         #nav #logo{visibility: collapse;
+
+             position: sticky;
+            /* width: 172px;
+            height: 50px; */
+            border: 2px solid whitesmoke;
+            background-color: #383835;
+            margin-left: 40px;
+
+         }
+         #nav #mid{ visibility: collapse;
+
+            position: sticky;
+            /* width: 700px;
+            height: 50px; */
+            border: 2px solid whitesmoke;
+            background-color: #383835;
+         }
+         #nav #end{visibility: collapse;
+
+            position: sticky;
+            top: 0px;
+            /* width: 200px;
+            height: 50px; */
+            border: 2px solid whitesmoke;
+            background-color: #383835;
+         }
+/* =================================================================================================== */
+/* 568 to 415 */
+      /* bar  */
+
+      #bar{
+        visibility: collapse;
+        position: absolute;
+        /* z-index: 2; */
+        border: 2px solid red;
+        background-color: blue;
+        top: 0%;
+        right: 0%;
+         width: 60px;
+         height: 80px;
+
+      }
+
+/* =================================================================================================== */   
+           /* responsive */
+ 
+      @media screen and (max-width:1148px) {
+        #bar 
+        {
+            visibility: visible;
+        }
+        #nav{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           
+        }
+        #nav #logo{
+            margin-left: 0%;
+        }
+      }
+      @media screen and (max-width:704px) {
+        #bar 
+        {
+            visibility: visible;
+        }
+        #nav{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           justify-content: flex-start;
+           /* flex-wrap: wrap; */
+           
+        }
+        #nav #logo{
+            margin-left: 0%;
+        }
+        #nav #mid{
+            width: 240px;
+            height: 240px;
+        }
+      }
+      @media screen and (max-width:1280px) and (max-height:800px) {
+        #bar 
+        {
+            visibility: visible;
+        }
+        #nav{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           justify-content: flex-start;
+           /* flex-wrap: wrap; */
+           
+        }
+        #nav #logo{
+            margin-left: 0%;
+        }
+        #nav #mid{
+            width: 240px;
+            height: 240px;
+        }
+      }
+      @media screen and (max-width:2560px) and (max-height:1128px) {
+        #bar 
+        {
+            visibility: visible;
+        }
+        #nav{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           justify-content: flex-start;
+           /* flex-wrap: wrap; */
+           
+        }
+        #nav #logo{
+            margin-left: 0%;
+        }
+        #nav #mid{
+            width: 240px;
+            height: 240px;
+        }
+      }
+
+/* ================================================================================================= */
+/* ================================================================================================= */
+
+#nav.active{
+   
+    height: 40vh;
+    align-items:center;
+    justify-content: center;
+    transition: .8s;
+}
+#nav.active #email{
+    visibility: collapse;
+    height: 4px;
+}
+#nav.active #bt{
+    visibility: collapse;
+    height: 0%;
+
+}
+ 
+#nav.active #logo{
+   
+    visibility: visible;
+    width: 172px;
+            height: 50px;
+}
+#nav.active #mid{
+
+    visibility: visible;
+    width: 240px;
+    height: 240px;
+}
+#nav.active #end{
+    
+    visibility: visible;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+/* ================================================================================================= */
+/* ================================================================================================= */
+
+    </style>
+</head>
+<body>
+    
+    <div id="nav" class="nav1">
+         <div id="logo"></div>
+         <div id="email"><input type="email" name="email" id="E-mail" placeholder="enter Email"></div>
+         <div id="bt"><button id="btn">submit</button></div>
+         <div id="mid"></div>
+         <div id="end">
+            <a href=""><img src="https://clipart.info/images/ccovers/1516920567instagram-png-logo-transparent.png" width="50px" height="50ox" alt=""></a>
+         </div>
+         <div id="bar">
+             
+        </div>
+    </div>
+
+
+    <section>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quidem adipisci quaerat officiis fugit eius vero odit aut nemo eligendi cum iste soluta voluptatem, enim recusandae exercitationem reprehenderit atque? Consequatur autem dolor repellat fugit debitis deleniti libero dignissimos, consequuntur quae, esse repellendus tempore blanditiis dolore enim veritatis a quia doloremque quis ullam. Placeat, et beatae, ratione accusamus consequuntur ex facere dolores natus iure, iste ut veritatis ab dolore. Voluptatibus, saepe. Ea cumque tenetur nisi necessitatibus! Eum voluptatibus doloribus expedita dignissimos aliquam. Laboriosam dolorem, magni tempora cumque atque eos non voluptas facere, tenetur culpa distinctio placeat modi saepe harum. Eos doloremque optio fugiat autem, iste ut quod similique corporis explicabo doloribus quaerat odio vel perferendis blanditiis molestiae sed repellat. Dicta, quasi? Officiis at, velit quidem, mollitia cumque molestias cum harum dolorum praesentium, quam facere facilis ab temporibus! Quo cum ab voluptatibus molestias labore at. Vitae architecto aliquid amet quod numquam natus doloremque ex voluptate sed, facilis sapiente debitis nihil alias provident inventore tempora reprehenderit? Deleniti exercitationem, quos molestiae libero saepe vero expedita velit, hic nemo autem vitae sunt sed eius repellendus quibusdam sit mollitia beatae facilis consequatur enim eligendi porro deserunt ipsa laborum. Nesciunt alias numquam ipsam delectus consectetur a. Harum?\</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quidem adipisci quaerat officiis fugit eius vero odit aut nemo eligendi cum iste soluta voluptatem, enim recusandae exercitationem reprehenderit atque? Consequatur autem dolor repellat fugit debitis deleniti libero dignissimos, consequuntur quae, esse repellendus tempore blanditiis dolore enim veritatis a quia doloremque quis ullam. Placeat, et beatae, ratione accusamus consequuntur ex facere dolores natus iure, iste ut veritatis ab dolore. Voluptatibus, saepe. Ea cumque tenetur nisi necessitatibus! Eum voluptatibus doloribus expedita dignissimos aliquam. Laboriosam dolorem, magni tempora cumque atque eos non voluptas facere, tenetur culpa distinctio placeat modi saepe harum. Eos doloremque optio fugiat autem, iste ut quod similique corporis explicabo doloribus quaerat odio vel perferendis blanditiis molestiae sed repellat. Dicta, quasi? Officiis at, velit quidem, mollitia cumque molestias cum harum dolorum praesentium, quam facere facilis ab temporibus! Quo cum ab voluptatibus molestias labore at. Vitae architecto aliquid amet quod numquam natus doloremque ex voluptate sed, facilis sapiente debitis nihil alias provident inventore tempora reprehenderit? Deleniti exercitationem, quos molestiae libero saepe vero expedita velit, hic nemo autem vitae sunt sed eius repellendus quibusdam sit mollitia beatae facilis consequatur enim eligendi porro deserunt ipsa laborum. Nesciunt alias numquam ipsam delectus consectetur a. Harum?\</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quidem adipisci quaerat officiis fugit eius vero odit aut nemo eligendi cum iste soluta voluptatem, enim recusandae exercitationem reprehenderit atque? Consequatur autem dolor repellat fugit debitis deleniti libero dignissimos, consequuntur quae, esse repellendus tempore blanditiis dolore enim veritatis a quia doloremque quis ullam. Placeat, et beatae, ratione accusamus consequuntur ex facere dolores natus iure, iste ut veritatis ab dolore. Voluptatibus, saepe. Ea cumque tenetur nisi necessitatibus! Eum voluptatibus doloribus expedita dignissimos aliquam. Laboriosam dolorem, magni tempora cumque atque eos non voluptas facere, tenetur culpa distinctio placeat modi saepe harum. Eos doloremque optio fugiat autem, iste ut quod similique corporis explicabo doloribus quaerat odio vel perferendis blanditiis molestiae sed repellat. Dicta, quasi? Officiis at, velit quidem, mollitia cumque molestias cum harum dolorum praesentium, quam facere facilis ab temporibus! Quo cum ab voluptatibus molestias labore at. Vitae architecto aliquid amet quod numquam natus doloremque ex voluptate sed, facilis sapiente debitis nihil alias provident inventore tempora reprehenderit? Deleniti exercitationem, quos molestiae libero saepe vero expedita velit, hic nemo autem vitae sunt sed eius repellendus quibusdam sit mollitia beatae facilis consequatur enim eligendi porro deserunt ipsa laborum. Nesciunt alias numquam ipsam delectus consectetur a. Harum?\</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quidem adipisci quaerat officiis fugit eius vero odit aut nemo eligendi cum iste soluta voluptatem, enim recusandae exercitationem reprehenderit atque? Consequatur autem dolor repellat fugit debitis deleniti libero dignissimos, consequuntur quae, esse repellendus tempore blanditiis dolore enim veritatis a quia doloremque quis ullam. Placeat, et beatae, ratione accusamus consequuntur ex facere dolores natus iure, iste ut veritatis ab dolore. Voluptatibus, saepe. Ea cumque tenetur nisi necessitatibus! Eum voluptatibus doloribus expedita dignissimos aliquam. Laboriosam dolorem, magni tempora cumque atque eos non voluptas facere, tenetur culpa distinctio placeat modi saepe harum. Eos doloremque optio fugiat autem, iste ut quod similique corporis explicabo doloribus quaerat odio vel perferendis blanditiis molestiae sed repellat. Dicta, quasi? Officiis at, velit quidem, mollitia cumque molestias cum harum dolorum praesentium, quam facere facilis ab temporibus! Quo cum ab voluptatibus molestias labore at. Vitae architecto aliquid amet quod numquam natus doloremque ex voluptate sed, facilis sapiente debitis nihil alias provident inventore tempora reprehenderit? Deleniti exercitationem, quos molestiae libero saepe vero expedita velit, hic nemo autem vitae sunt sed eius repellendus quibusdam sit mollitia beatae facilis consequatur enim eligendi porro deserunt ipsa laborum. Nesciunt alias numquam ipsam delectus consectetur a. Harum?\</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quidem adipisci quaerat officiis fugit eius vero odit aut nemo eligendi cum iste soluta voluptatem, enim recusandae exercitationem reprehenderit atque? Consequatur autem dolor repellat fugit debitis deleniti libero dignissimos, consequuntur quae, esse repellendus tempore blanditiis dolore enim veritatis a quia doloremque quis ullam. Placeat, et beatae, ratione accusamus consequuntur ex facere dolores natus iure, iste ut veritatis ab dolore. Voluptatibus, saepe. Ea cumque tenetur nisi necessitatibus! Eum voluptatibus doloribus expedita dignissimos aliquam. Laboriosam dolorem, magni tempora cumque atque eos non voluptas facere, tenetur culpa distinctio placeat modi saepe harum. Eos doloremque optio fugiat autem, iste ut quod similique corporis explicabo doloribus quaerat odio vel perferendis blanditiis molestiae sed repellat. Dicta, quasi? Officiis at, velit quidem, mollitia cumque molestias cum harum dolorum praesentium, quam facere facilis ab temporibus! Quo cum ab voluptatibus molestias labore at. Vitae architecto aliquid amet quod numquam natus doloremque ex voluptate sed, facilis sapiente debitis nihil alias provident inventore tempora reprehenderit? Deleniti exercitationem, quos molestiae libero saepe vero expedita velit, hic nemo autem vitae sunt sed eius repellendus quibusdam sit mollitia beatae facilis consequatur enim eligendi porro deserunt ipsa laborum. Nesciunt alias numquam ipsam delectus consectetur a. Harum?\</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quidem adipisci quaerat officiis fugit eius vero odit aut nemo eligendi cum iste soluta voluptatem, enim recusandae exercitationem reprehenderit atque? Consequatur autem dolor repellat fugit debitis deleniti libero dignissimos, consequuntur quae, esse repellendus tempore blanditiis dolore enim veritatis a quia doloremque quis ullam. Placeat, et beatae, ratione accusamus consequuntur ex facere dolores natus iure, iste ut veritatis ab dolore. Voluptatibus, saepe. Ea cumque tenetur nisi necessitatibus! Eum voluptatibus doloribus expedita dignissimos aliquam. Laboriosam dolorem, magni tempora cumque atque eos non voluptas facere, tenetur culpa distinctio placeat modi saepe harum. Eos doloremque optio fugiat autem, iste ut quod similique corporis explicabo doloribus quaerat odio vel perferendis blanditiis molestiae sed repellat. Dicta, quasi? Officiis at, velit quidem, mollitia cumque molestias cum harum dolorum praesentium, quam facere facilis ab temporibus! Quo cum ab voluptatibus molestias labore at. Vitae architecto aliquid amet quod numquam natus doloremque ex voluptate sed, facilis sapiente debitis nihil alias provident inventore tempora reprehenderit? Deleniti exercitationem, quos molestiae libero saepe vero expedita velit, hic nemo autem vitae sunt sed eius repellendus quibusdam sit mollitia beatae facilis consequatur enim eligendi porro deserunt ipsa laborum. Nesciunt alias numquam ipsam delectus consectetur a. Harum?\</p>
+    </section>
+    
+    <script>
+          const nav = document.getElementById("nav")
+          const bar = document.getElementById("bar")
+            bar.onclick = function () {
+               bar.classList.toggle("active")
+               nav.classList.toggle("active")
+          }
+    </script>
+</body>
+</html>
